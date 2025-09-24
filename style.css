@@ -1,0 +1,68 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+/* Navbar */
+header {
+  background: #222;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* centraliza tudo */
+  align-items: center;
+  gap: 100px; /* espaço entre esquerda, logo e direita */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #d4af37; /* dourado */
+}
+
+.logo img {
+  height: 50px; /* tamanho da logo */
+  display: block;
+  margin: 0 auto;
+  transform: translateX(-15px); /* puxa levemente para esquerda */
+}
+
+/* Hero (conteúdo principal) */
+.hero {
+  background: url("imagens/imagemfundo.png.webp") no-repeat center center;
+  background-size: cover;
+  padding: 150px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #d4af37;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}

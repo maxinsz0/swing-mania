@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swing & Mania - Banda de Pagode</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #d4af37; /* Dourado */
+    }
+
+    /* Cabeçalho */
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #111;
+    }
+    header img {
+      max-width: 200px;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2rem;
+      color: #d4af37;
+    }
+    header p {
+      font-size: 1rem;
+      color: #aaa;
+    }
+
+    /* Menu */
+    nav {
+      background-color: #222;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #d4af37;
+      margin: 0 18px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* Seções */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #d4af37;
+      border-bottom: 2px solid #d4af37;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 40px;
+      font-size: 1.8rem;
+    }
+
+    /* Membros */
+    .membros {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    .membro {
+      background: #111;
+      border: 1px solid #d4af37;
+      border-radius: 12px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+      transition: transform 0.3s;
+    }
+    .membro:hover {
+      transform: translateY(-8px);
+    }
+    .membro h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+    .membro p {
+      margin: 0;
+      color: #bbb;
+    }
+
+    /* Patrocinadores */
+    .patrocinadores {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .patrocinador {
+      background: transparent;
+      padding: 6px;
+      border-radius: 12px;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s;
+      overflow: hidden;
+    }
+    .patrocinador img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border: none;
+      background: transparent;
+    }
+    .patrocinador:hover {
+      transform: scale(1.05);
+      background-color: #111;
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      font-size: 14px;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Swing & Mania Logo">
+    <h1>Swing & Mania</h1>
+    <p>A batida do pagode que conquista!</p>
+  </header>
+
+  <nav>
+    <a href="#membros">Membros</a>
+    <a href="#patrocinadores">Patrocinadores</a>
+    <a href="#extras">Extras</a>
+  </nav>
+
+  <section id="membros">
+    <h2>Membros da Banda</h2>
+    <div class="membros">
+      <div class="membro"><h3>Jeferson Fernandes</h3><p>TanTan</p></div>
+      <div class="membro"><h3>Walter Costa</h3><p>Vocalista</p></div>
+      <div class="membro"><h3>Marcos Mendes</h3><p>Surdo</p></div>
+      <div class="membro"><h3>João</h3><p>Pandeiro</p></div>
+    </div>
+  </section>
+
+  <section id="patrocinadores">
+    <h2>Patrocinadores</h2>
+    <div class="patrocinadores">
+      <div class="patrocinador"><a href="https://www.clinicasawada.com.br/contato.html" target="_blank"><img src="imagens/logosawada.png" alt="Odontologia Sawada"></a></div>
+      <div class="patrocinador"><a href="https://letzplay.me/ituporanga"><img src="imagens/logobeach.png" alt="Beach Tennis"></a></div>
+      <div class="patrocinador"><a href="https://www.facebook.com/tionilbarbearia/"><img src="imagens/logonil.png" alt="Tio Nil"></a></div>
+      <div class="patrocinador"><a href="https://encontreveiculos.com.br/estoque/es-automoveis/3940"><img src="imagens/logoes.png" alt="Es automóveis"></a></div>
+      <div class="patrocinador"><a href="https://www.instagram.com/hikari.terapiasintegradas/"><img src="imagens/logohitaki.png" alt="Hiraki"></a></div>
+      <div class="patrocinador"><a href="https://www.lightacademia.com/"><img src="imagens/logoligth.png" alt="Academia"></a></div>
+      <div class="patrocinador"><a href="https://www.instagram.com/rvnespacofitness/"><img src="imagens/logoRvn.png" alt="RVN"></a></div>
+    </div>
+  </section>
+
+  <section id="extras">
+    <h2>Extras</h2>
+    <p>Em breve: fotos, vídeos e muito mais!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Swing & Mania - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
